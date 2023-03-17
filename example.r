@@ -13,7 +13,7 @@ data <- list(
 )
 
 # model ----
-m <- rstan::stan_model("stan/weibull.stan")  # ~30 sec.
+m <- rstan::stan_model("weibull.stan")  # ~30 sec.
 fit <- rstan::sampling(m, data = data)
 
 
